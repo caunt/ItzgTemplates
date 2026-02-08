@@ -3,14 +3,14 @@
   "ops": [
     {
       "$set": {
-        "path": "$['proxies']['bungee-cord']['enabled']",
-        "value": "${CFG_BUNGEECORD_ENABLED}",
+        "path": "$['proxies']['bungee-cord']['online-mode']",
+        "value": "${CFG_BUNGEECORD_ONLINE_MODE}",
         "value-type": "bool"
       }
     },
     {
       "$set": {
-        "path": "$['proxies']['proxy-protocol']['enabled']",
+        "path": "$['proxies']['proxy-protocol']",
         "value": "${CFG_PROXY_PROTOCOL_ENABLED}",
         "value-type": "bool"
       }
