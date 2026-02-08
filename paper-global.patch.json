@@ -1,43 +1,39 @@
 {
-  "patches": [
+  "file": "/data/config/paper-global.yml",
+  "ops": [
     {
-      "file": "/data/config/paper-global.yml",
-      "ops": [
-        {
-          "$set": {
-            "path": "$.proxies.bungee-cord.enabled",
-            "value": "${CFG_BUNGEECORD_ENABLED}",
-            "value-type": "bool"
-          }
-        },
-        {
-          "$set": {
-            "path": "$.proxies.proxy-protocol.enabled",
-            "value": "${CFG_PROXY_PROTOCOL_ENABLED}",
-            "value-type": "bool"
-          }
-        },
-        {
-          "$set": {
-            "path": "$.proxies.velocity.enabled",
-            "value": "${CFG_VELOCITY_ENABLED}",
-            "value-type": "bool"
-          }
-        },
-        {
-          "$set": {
-            "path": "$.proxies.velocity.online-mode",
-            "value": "${CFG_VELOCITY_ONLINE_MODE}",
-            "value-type": "bool"
-          }
-        },
-        {
-          "$set": {
-            "path": "$.proxies.velocity.secret",
-            "value": "${CFG_VELOCITY_SECRET}"
-          }
-        }
-      ]
+      "$set": {
+        "path": "$.proxies.bungee-cord.enabled",
+        "value": "${CFG_BUNGEECORD_ENABLED}",
+        "value-type": "bool"
+      }
+    },
+    {
+      "$set": {
+        "path": "$.proxies.proxy-protocol.enabled",
+        "value": "${CFG_PROXY_PROTOCOL_ENABLED}",
+        "value-type": "bool"
+      }
+    },
+    {
+      "$set": {
+        "path": "$.proxies.velocity.enabled",
+        "value": "${CFG_VELOCITY_ENABLED}",
+        "value-type": "bool"
+      }
+    },
+    {
+      "$set": {
+        "path": "$.proxies.velocity.online-mode",
+        "value": "${CFG_VELOCITY_ONLINE_MODE}",
+        "value-type": "bool"
+      }
+    },
+    {
+      "$set": {
+        "path": "$.proxies.velocity.secret",
+        "value": "${CFG_VELOCITY_SECRET}"
+      }
     }
   ]
 }
