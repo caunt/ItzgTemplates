@@ -1,0 +1,25 @@
+{
+   "file":"/data/config/paper.yml",
+   "ops":[
+      {
+         "$set":{
+            "path":"$.settings.velocity-support.enabled",
+            "value":"${CFG_VELOCITY_ENABLED}",
+            "value-type":"bool"
+         }
+      },
+      {
+         "$set":{
+            "path":"$.proxies.velocity.online-mode",
+            "value":"${CFG_VELOCITY_ONLINE_MODE}",
+            "value-type":"bool"
+         }
+      },
+      {
+         "$set":{
+            "path":"$.settings.velocity-support.secret",
+            "value":"${CFG_VELOCITY_SECRET}"
+         }
+      }
+   ]
+}
