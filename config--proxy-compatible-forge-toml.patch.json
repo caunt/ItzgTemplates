@@ -1,28 +1,24 @@
 {
-  "patches": [
+  "file": "/data/config/proxy-compatible-forge.toml",
+  "ops": [
     {
-      "file": "/data/config/proxy-compatible-forge.toml",
-      "ops": [
-        {
-          "$set": {
-            "path": "$.forwarding.enabled",
-            "value": "${CFG_VELOCITY_ENABLED}",
-            "value-type": "bool"
-          }
-        },
-        {
-          "$set": {
-            "path": "$.forwarding.mode",
-            "value": "${CFG_FORWARDING_MODE}"
-          }
-        },
-        {
-          "$set": {
-            "path": "$.forwarding.secret",
-            "value": "${CFG_VELOCITY_SECRET}"
-          }
-        }
-      ]
+      "$set": {
+        "path": "$.forwarding.enabled",
+        "value": "${CFG_VELOCITY_ENABLED}",
+        "value-type": "bool"
+      }
+    },
+    {
+      "$set": {
+        "path": "$.forwarding.mode",
+        "value": "${CFG_FORWARDING_MODE}"
+      }
+    },
+    {
+      "$set": {
+        "path": "$.forwarding.secret",
+        "value": "${CFG_VELOCITY_SECRET}"
+      }
     }
   ]
 }
