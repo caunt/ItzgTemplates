@@ -1,0 +1,12 @@
+{
+   "file":"/data/config/fml.toml",
+   "ops":[
+      {
+         "$set":{
+            "path":"$.disableConfigWatcher",
+            "value":"true",
+            "value-type":"bool"
+         }
+      }
+   ]
+}
