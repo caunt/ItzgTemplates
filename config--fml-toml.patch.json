@@ -4,7 +4,7 @@
       {
          "$set":{
             "path":"$.disableConfigWatcher",
-            "value":"true",
+            "value":"${CFG_FML_DISABLE_CONFIG_WATCHER}",
             "value-type":"bool"
          }
       }
