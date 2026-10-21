@@ -1,5 +1,5 @@
 {
-   "file":"/data/config/fml.toml",
+   "file":"config/fml.toml",
    "ops":[
       {
          "$set":{
