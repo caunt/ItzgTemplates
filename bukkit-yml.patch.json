@@ -2,8 +2,9 @@
    "file":"/data/bukkit.yml",
    "ops":[
       {
-         "$set":{
-            "path":"$.settings.connection-throttle",
+         "$put":{
+            "path":"$.settings",
+            "key":"connection-throttle",
             "value":"${CFG_BUKKIT_CONNECTION_THROTTLE}",
             "value-type":"int"
          }
